@@ -7,7 +7,9 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     reader=new reader_login();
+    reader->setWindowTitle("reader login");
     admin =new admin_login();
+    admin->setWindowTitle("admin login");
     connect(reader,SIGNAL(retsig()),this,SLOT(ShowWindow()));
     connect(admin,SIGNAL(retsig()),this,SLOT(ShowWindow()));
 }

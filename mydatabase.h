@@ -4,13 +4,14 @@
 #include <QSqlDatabase>//数据库的头文件
 #include <QSqlError>//出错处理头文件
 #include<QSqlQuery>
+#include<QSqlDriver>
 class mydatabase
 {
 public:
     mydatabase();
+    ~mydatabase();
     void openDatabase();
     QSqlDatabase getConnection();
-    void closeDatabase();
 private:
     QSqlDatabase db;
 };

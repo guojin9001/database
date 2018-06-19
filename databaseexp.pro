@@ -29,17 +29,44 @@ SOURCES += \
     mydatabase.cpp \
     reader_login.cpp \
     admin_login.cpp \
-    admin.cpp
+    admin.cpp \
+    borrow_book.cpp \
+    insert_reader.cpp \
+    change_book.cpp \
+    borrow_status.cpp \
+    borrow_history.cpp \
+    book_store_status.cpp \
+    reader.cpp \
+    about.cpp
 
 HEADERS += \
         mainwindow.h \
     mydatabase.h \
     reader_login.h \
     admin_login.h \
-    admin.h
+    admin.h \
+    borrow_book.h \
+    insert_reader.h \
+    change_book.h \
+    borrow_status.h \
+    borrow_history.h \
+    book_store_status.h \
+    reader.h \
+    about.h
 
 FORMS += \
         mainwindow.ui \
     reader_login.ui \
     admin_login.ui \
-    admin.ui
+    admin.ui \
+    borrow_book.ui \
+    insert_reader.ui \
+    change_book.ui \
+    borrow_status.ui \
+    borrow_history.ui \
+    book_store_status.ui \
+    reader.ui \
+    about.ui
+
+RESOURCES += \
+    test.qrc

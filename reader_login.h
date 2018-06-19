@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include"mydatabase.h"
+#include"reader.h"
 namespace Ui {
 class reader_login;
 }
@@ -17,6 +18,8 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::reader_login *ui;

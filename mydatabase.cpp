@@ -5,6 +5,10 @@ mydatabase::mydatabase()
 {
 
 }
+mydatabase::~mydatabase()
+{
+    db.close();
+}
 void mydatabase::openDatabase()
 {
     if(QSqlDatabase::contains("qt_sql_default_connection"))
@@ -27,14 +31,15 @@ void mydatabase::openDatabase()
     else
     {
         qDebug()<<"Connect to Database Success!";
+        if(db.driver()->hasFeature(QSqlDriver::Transactions))
+        {
+        qDebug()<<"has driver";
+        }
     }
 }
 QSqlDatabase mydatabase::getConnection()
 {
     return db;
 }
-void mydatabase::closeDatabase()
-{
-    db.close();
-}
+
 

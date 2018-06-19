@@ -4,6 +4,7 @@
 #include <QWidget>
 #include"mydatabase.h"
 #include"admin.h"
+#include<QMessageBox>
 namespace Ui {
 class admin_login;
 }

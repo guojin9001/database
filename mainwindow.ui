@@ -6,22 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>410</width>
+    <height>366</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/jpg/zzpic10012_s.jpg);</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>60</y>
-      <width>91</width>
-      <height>41</height>
+      <x>130</x>
+      <y>50</y>
+      <width>121</width>
+      <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 14pt &quot;Arial Black&quot;;</string>
     </property>
     <property name="text">
      <string>Reader</string>
@@ -36,6 +42,9 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 14pt &quot;Arial Black&quot;;</string>
+    </property>
     <property name="text">
      <string>Admin</string>
     </property>
@@ -46,7 +55,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>410</width>
      <height>23</height>
     </rect>
    </property>
